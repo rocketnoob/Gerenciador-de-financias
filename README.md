@@ -4,10 +4,6 @@ Um **gerenciador financeiro pessoal** moderno, responsivo e 100% **frontend**. R
 
 Os dados são salvos permanentemente no **localStorage** do navegador - **nunca perca suas informações**!
 
-## ✨ **Demonstração**
-
-[![Gerenciador de Finanças](https://via.placeholder.com/1200x630/4facfe/ffffff?text=%F0%9F%92%B0+Gerenciador+de+Finan%C3%A7as)](https://gerenciador-financas.netlify.app)
-
 ## 🎯 **Funcionalidades**
 
 - ✅ **Adicionar Ganhos e Despesas** com descrição e valor
@@ -21,18 +17,6 @@ Os dados são salvos permanentemente no **localStorage** do navegador - **nunca 
 - ✅ **Validação de formulário**
 - ✅ **Zero dependências externas** (exceto Chart.js CDN)
 
-🚀 Como usar
-Pré-requisitos
-
-    Qualquer navegador moderno (Chrome, Firefox, Safari, Edge)
-
-Instalação
-
-    Clone ou baixe o repositório
-    Abra o arquivo index.html no seu navegador
-    Pronto! 🎉
-    https://github.com/USER/gerenciador-financas
-↓
 ├── index.html
 ├── style.css
 └── script.js
