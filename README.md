@@ -1,9 +1,5 @@
 # 💰 Gerenciador de Finanças Pessoais
 
-![GitHub stars](https://img.shields.io/github/stars/USER/gerenciador-financas?style=social)
-![GitHub forks](https://img.shields.io/github/forks/USER/gerenciador-financas?style=social)
-![GitHub license](https://img.shields.io/github/license/USER/gerenciador-financas)
-
 Um **gerenciador financeiro pessoal** moderno, responsivo e 100% **frontend**. Registre seus **ganhos e despesas**, acompanhe seu **saldo em tempo real** e visualize seus gastos através de **gráficos interativos** com Chart.js.
 
 Os dados são salvos permanentemente no **localStorage** do navegador - **nunca perca suas informações**!
