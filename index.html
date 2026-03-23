@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Finanças Pessoais</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>💰 Gerenciador de Finanças</h1>
+            <div class="balance">
+                <p>Saldo Atual: <span id="saldo">R$ 0,00</span></p>
+            </div>
+        </header>
+
+        <main>
+            <!-- Formulário de entrada -->
+            <section class="form-section">
+                <h2>Adicionar Transação</h2>
+                <form id="transacaoForm">
+                    <div class="input-group">
+                        <label for="descricao">Descrição:</label>
+                        <input type="text" id="descricao" placeholder="Ex: Salário, Supermercado..." required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="valor">Valor (R$):</label>
+                        <input type="number" id="valor" step="0.01" placeholder="0.00" required>
+                    </div>
+                    
+                    <div class="input-group radio-group">
+                        <label>Tipo:</label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" value="ganho" checked>
+                            <span class="radio-custom">+ Ganho</span>
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="tipo" value="despesa">
+                            <span class="radio-custom">- Despesa</span>
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Adicionar</button>
+                </form>
+            </section>
+
+            <!-- Gráfico -->
+            <section class="chart-section">
+                <h2>📊 Visão Geral dos Gastos</h2>
+                <canvas id="graficoGastos"></canvas>
+            </section>
+
+            <!-- Lista de transações -->
+            <section class="transacoes-section">
+                <h2>📋 Últimas Transações</h2>
+                <div class="filtros">
+                    <button class="filtro-btn active" data-filtro="todos">Todos</button>
+                    <button class="filtro-btn" data-filtro="ganhos">Ganhos</button>
+                    <button class="filtro-btn" data-filtro="despesas">Despesas</button>
+                </div>
+                <div id="listaTransacoes" class="lista-transacoes">
+                    <p class="empty-state">Nenhuma transação cadastrada. Adicione a primeira!</p>
+                </div>
+            </section>
+        </main>
+
+        <!-- Botões de ação -->
+        <div class="actions">
+            <button id="limparTudo" class="btn btn-danger">🗑️ Limpar Tudo</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
