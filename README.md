@@ -16,11 +16,7 @@ Os dados são salvos permanentemente no **localStorage** do navegador - **nunca 
 - ✅ **Limpar dados** com confirmação
 - ✅ **Validação de formulário**
 - ✅ **Zero dependências externas** (exceto Chart.js CDN)
-
-├── index.html
-├── style.css
-└── script.js
-
+  
 🛠️ Tecnologias
 HTML5 | CSS3 | Vanilla JavaScript | Chart.js | localStorage
 
